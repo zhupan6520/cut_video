@@ -1,0 +1,40 @@
+﻿一, 程序说明
+    1, 程序以python3或python2 运行.
+    2, read_cideo.py 将视频切成图片.从图片中检测物体,并将物体坐标写入json文档.
+    3, 程序启动:运行 python  read_cideo.py
+    4, 当输入源为图片时,可直接运行img_testing.py进行处理
+    5，需要 dlib 包
+    6，需要 cv2 包
+
+二, 参数说明
+    1,程序名称:Kc_Mi
+        "name": "Kc_Mi"
+    2,程序版本号:1.0.2
+        "version": "1.0.2",
+    3,程序开发:光启数据部
+        "department": "Kuang-Chi Data Department",
+    4,程序用途:检测和识别
+        "purpose": "Detection and recognition",
+    5,开发时间:
+        "time": "2018-10-19",
+    6,配置参数:
+        "dependencies": {
+    7,视频输入路径
+        }
+        "input_path": "D:/video",
+    9,图片路径(视频切图的输出,物体检测的输出json文件)
+        "temporary_path": "D:/img",
+    10,模型路径
+        "models_path": "./models",
+    11,视频切图提取帧数间隔
+        "frame_num": 5,
+    12,提取视频前多少帧
+        "stop_img_num": 10000000,
+    13,图片包大小
+        "img_bao_num": 200,
+    14,物品类别
+        "category": "ren_lian"
+
+三，新增功能，或优化
+    1，合并功能,切图,识别,入库,一步到位.
+    2，优化速度

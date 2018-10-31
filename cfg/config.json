@@ -1,0 +1,29 @@
+{
+  "name": "Kc_Mi",
+  "version": "1-0-6",
+  "department": "Kuang-Chi Data Department",
+  "purpose": "Detection and recognition",
+  "version_time": "2018-10-26",
+  "dependencies": {
+    "input_path": "./data/video",
+    "temporary_path": "./data/img",
+    "models_path": "./models",
+    "similarity_degree": 0.84,
+    "frame_num": 5,
+    "stop_img_num": 10000,
+    "img_bao_num": 200,
+    "category": "ren_lian"
+  },
+  "mongodb_config": {
+    "host": "10.2.5.99",
+    "port": 20000,
+    "database": "MF",
+    "col_label_packet": "label_packet",
+    "col_label_task": "label_task",
+    "col_label_img": "label_img",
+    "label_task_category": "label_task_category"
+  },
+  "put_storage": {
+    "task_type": "动态人脸标注"
+  }
+}
